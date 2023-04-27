@@ -1,0 +1,11 @@
+<main>
+    <h1>Connectez-vous à votre session</h1>
+
+    <form action="/.env" method="post">
+        <fieldset>
+            <input type="text" name="alias" id="alias" value="<%= req.session.secret[id] %>" placeholder="Entrez votre alias"><br>
+            <input type="password" name="password" id="password" value="<%= req.session.secret[pw] %>" placeholder="Entrez votre mot de passe"><br>
+            <input type="submit" value="Se connecter">
+        </fieldset>
+    </form>
+</main>
